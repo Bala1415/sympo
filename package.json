@@ -8,7 +8,8 @@
     "client": "cd frontend && npm start",
     "install-all": "npm install && cd frontend && npm install && cd ../backend && npm install",
     "build": "cd frontend && npm run build:vercel",
-    "vercel-build": "npm run install-all && npm run build"
+    "vercel-build": "npm run install-all && npm run build && cp -r frontend/build/* .",
+    "vercel-build-win": "npm run install-all && npm run build && xcopy /E /Y frontend\\build\\* ."
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.11",
