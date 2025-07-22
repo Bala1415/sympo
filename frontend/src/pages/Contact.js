@@ -87,10 +87,62 @@ const Contact = () => {
             <div>
               <h4 style={{ color: '#764ba2', marginBottom: '1rem' }}>Follow Us</h4>
               <div style={{ display: 'flex', gap: '1rem' }}>
-                <a href="#" style={{ textDecoration: 'none', color: '#764ba2' }}>📘 Facebook</a>
-                <a href="#" style={{ textDecoration: 'none', color: '#764ba2' }}>🐦 Twitter</a>
-                <a href="#" style={{ textDecoration: 'none', color: '#764ba2' }}>💼 LinkedIn</a>
-                <a href="#" style={{ textDecoration: 'none', color: '#764ba2' }}>📷 Instagram</a>
+                <button 
+                  onClick={() => window.open('https://facebook.com', '_blank')} 
+                  style={{ 
+                    background: 'none', 
+                    border: 'none', 
+                    textDecoration: 'none', 
+                    color: '#764ba2', 
+                    cursor: 'pointer',
+                    padding: 0,
+                    font: 'inherit'
+                  }}
+                >
+                  📘 Facebook
+                </button>
+                <button 
+                  onClick={() => window.open('https://twitter.com', '_blank')} 
+                  style={{ 
+                    background: 'none', 
+                    border: 'none', 
+                    textDecoration: 'none', 
+                    color: '#764ba2', 
+                    cursor: 'pointer',
+                    padding: 0,
+                    font: 'inherit'
+                  }}
+                >
+                  🐦 Twitter
+                </button>
+                <button 
+                  onClick={() => window.open('https://linkedin.com', '_blank')} 
+                  style={{ 
+                    background: 'none', 
+                    border: 'none', 
+                    textDecoration: 'none', 
+                    color: '#764ba2', 
+                    cursor: 'pointer',
+                    padding: 0,
+                    font: 'inherit'
+                  }}
+                >
+                  💼 LinkedIn
+                </button>
+                <button 
+                  onClick={() => window.open('https://instagram.com', '_blank')} 
+                  style={{ 
+                    background: 'none', 
+                    border: 'none', 
+                    textDecoration: 'none', 
+                    color: '#764ba2', 
+                    cursor: 'pointer',
+                    padding: 0,
+                    font: 'inherit'
+                  }}
+                >
+                  📷 Instagram
+                </button>
               </div>
             </div>
           </div>
