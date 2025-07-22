@@ -1,0 +1,45 @@
+html, body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.intro-animation-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  display: flex;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.intro-half {
+  position: absolute;
+  top: 0;
+  width: 50vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.intro-half.left { left: 0; }
+.intro-half.right { left: 50vw; }
+
+.intro-img {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+.intro-img.left  { clip-path: inset(0 50% 0 0); }
+.intro-img.right {
+  clip-path: inset(0 0 0 50%);
+  background-size: cover;
+  background-position: center;
+}
