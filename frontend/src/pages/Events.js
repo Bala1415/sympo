@@ -2,11 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
+const profileCardVariants = {
+  hidden: { opacity: 0, scale: 0.8, y: 50 },
+  visible: { opacity: 1, scale: 1, y: 0 }
+};
+
 const Events = () => {
   const events = [
     {
       id: 1,
-      title: "Tech Innovation Challenge",
+      title: "TECHNOVERSE",
       description: "Showcase your innovative ideas and compete with the brightest minds in technology. Present your solutions to real-world problems and get a chance to win exciting prizes. This competition focuses on emerging technologies like IoT, Blockchain, AR/VR, and sustainable tech solutions.",
       date: "March 15, 2025",
       time: "10:00 AM - 4:00 PM",
@@ -18,7 +23,7 @@ const Events = () => {
     },
     {
       id: 2,
-      title: "AI & Machine Learning Workshop",
+      title: "PROMPT NOT FOUND",
       description: "Comprehensive hands-on workshop covering the latest trends in AI and ML. Learn from industry experts and build practical projects using Python, TensorFlow, and PyTorch. Topics include neural networks, deep learning, computer vision, and natural language processing.",
       date: "March 16, 2025",
       time: "9:00 AM - 5:00 PM",
@@ -30,7 +35,7 @@ const Events = () => {
     },
     {
       id: 3,
-      title: "Cybersecurity Summit",
+      title: "THE CIPHER TEXT",
       description: "Explore the world of cybersecurity, ethical hacking, and data protection. Interactive sessions covering penetration testing, vulnerability assessment, digital forensics, and security best practices. Live demonstrations of common attack vectors and defense mechanisms.",
       date: "March 17, 2025",
       time: "11:00 AM - 3:00 PM",
@@ -42,7 +47,7 @@ const Events = () => {
     },
     {
       id: 4,
-      title: "Web Development Bootcamp",
+      title: "JADE JOURNEY",
       description: "Intensive bootcamp covering modern web development technologies including React, Node.js, MongoDB, and cloud deployment strategies. Build full-stack applications and learn industry best practices for scalable web development.",
       date: "March 18, 2025",
       time: "10:00 AM - 6:00 PM",
@@ -54,7 +59,7 @@ const Events = () => {
     },
     {
       id: 5,
-      title: "Startup Pitch Competition",
+      title: "PAPER PRESENTATION",
       description: "Present your startup ideas to a panel of investors and industry leaders. Perfect platform for aspiring entrepreneurs to showcase their business models, market analysis, and growth strategies. Network with potential co-founders and mentors.",
       date: "March 19, 2025",
       time: "2:00 PM - 6:00 PM",
