@@ -63,7 +63,7 @@ const Home = () => {
             />
           </div>
           <div className="profile-content">
-            <h3 className="accent">Event Management Team</h3>
+            <h3 className="accent">TECHNOVERSE</h3>
             <p>Our dedicated event coordinators ensure seamless organization and execution of all symposium activities. With years of experience in managing large-scale technical events, they bring expertise and innovation to ALTRUIXX 2K25.</p>
             <ul className="profile-highlights">
               <li>🎯 Event Planning & Coordination</li>
@@ -93,7 +93,7 @@ const Home = () => {
             />
           </div>
           <div className="profile-content">
-            <h3 className="accent">Technical Support Team</h3>
+            <h3 className="accent">404 - PROMPT NOT FOUND</h3>
             <p>Our technical team handles all aspects of digital infrastructure and technical event management. They ensure smooth operation of workshops, competitions, and online platforms throughout the symposium.</p>
             <ul className="profile-highlights">
               <li>💻 Technical Workshop Support</li>
@@ -123,7 +123,7 @@ const Home = () => {
             />
           </div>
           <div className="profile-content">
-            <h3 className="accent">Creative & Design Team</h3>
+            <h3 className="accent">THE CIPHER CUT</h3>
             <p>The creative team brings ALTRUIXX 2K25 to life through stunning visuals and engaging content. They handle all aspects of branding, design, and marketing communications.</p>
             <ul className="profile-highlights">
               <li>🎨 Visual Design & Branding</li>
@@ -153,8 +153,8 @@ const Home = () => {
             />
           </div>
           <div className="profile-content">
-            <h3 className="accent">Student Relations Team</h3>
-            <p>Our student relations team serves as the bridge between participants and organizers. They ensure every student gets the support and information they need throughout the event.</p>
+            <h3 className="accent">JADE JOURNEY</h3>
+            <p>JADE JOURNEY is an intensive bootcamp covering modern web development technologies including React, Node.js, MongoDB, and cloud deployment. Participants will build full-stack applications and learn best practices for scalable web development. Bring your laptop and be ready to code!</p>
             <ul className="profile-highlights">
               <li>👥 Participant Coordination</li>
               <li>❓ Query Resolution</li>
@@ -183,7 +183,7 @@ const Home = () => {
             />
           </div>
           <div className="profile-content">
-            <h3 className="accent">Faculty Advisory Team</h3>
+            <h3 className="accent">PAPER PRESENTATION</h3>
             <p>Our esteemed faculty advisors provide guidance and mentorship to ensure the symposium meets high academic standards and provides valuable learning experiences.</p>
             <ul className="profile-highlights">
               <li>📚 Academic Guidance</li>

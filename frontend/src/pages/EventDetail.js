@@ -7,7 +7,7 @@ const EventDetail = () => {
   
   const events = {
     1: {
-      title: "Tech Innovation Challenge",
+      title: "TECHNOVERSE",
       description: "Showcase your innovative ideas and compete with the brightest minds in technology. Present your solutions to real-world problems and get a chance to win exciting prizes.",
       fullDescription: "The Tech Innovation Challenge is our flagship competition designed to foster creativity and innovation among students. Participants will work in teams to develop solutions for real-world problems using cutting-edge technologies. The challenge spans across various domains including healthcare, education, environment, and social impact. Teams will have access to mentors from leading tech companies and will present their solutions to a panel of industry experts.",
       date: "March 15, 2025",
@@ -33,7 +33,7 @@ const EventDetail = () => {
       ]
     },
     2: {
-      title: "AI & Machine Learning Workshop",
+      title: "404 - PROMPT NOT FOUND",
       description: "Comprehensive hands-on workshop covering the latest trends in AI and ML. Learn from industry experts and build practical projects.",
       fullDescription: "This intensive workshop provides a deep dive into the world of Artificial Intelligence and Machine Learning. Participants will learn about neural networks, deep learning algorithms, computer vision, and natural language processing through hands-on exercises and real-world case studies. The workshop includes practical sessions using Python, TensorFlow, and PyTorch frameworks.",
       date: "March 16, 2025",

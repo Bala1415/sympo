@@ -8,66 +8,72 @@ const profileCardVariants = {
 };
 
 const Events = () => {
+  // The events array contains detailed information about each event.
+  // Each object describes the event's title, description, schedule, venue, category, eligibility, prizes, and requirements.
+  // This descriptive format helps participants understand what each event offers and how to prepare.
+
   const events = [
     {
       id: 1,
       title: "TECHNOVERSE",
-      description: "Showcase your innovative ideas and compete with the brightest minds in technology. Present your solutions to real-world problems and get a chance to win exciting prizes. This competition focuses on emerging technologies like IoT, Blockchain, AR/VR, and sustainable tech solutions.",
-      date: "March 15, 2025",
+      description: `TechnoVerse is a multi-stage team-based technical event combining logical thinking, 
+problem-solving, and real-world technical reasoning. Across three escalating rounds, 
+participants will tackle algorithmic challenges, analyze datasets, and apply machine learning 
+techniques using modern tools and technologies.`,
       time: "10:00 AM - 4:00 PM",
       venue: "Main Auditorium",
       category: "Competition",
-      eligibility: "All students",
-      prizes: "₹50,000 cash prizes",
-      requirements: "Team of 2-4 members, Prototype/Demo required"
+      eligibility: "Open to all students. Teams of 2-4 members are required.",
+      prizes: "₹50,000 cash prizes for top teams.",
+      requirements: "Bring a prototype or demo to present."
     },
     {
       id: 2,
       title: "PROMPT NOT FOUND",
-      description: "Comprehensive hands-on workshop covering the latest trends in AI and ML. Learn from industry experts and build practical projects using Python, TensorFlow, and PyTorch. Topics include neural networks, deep learning, computer vision, and natural language processing.",
+      description: "This workshop is a two-round event combining technical skills and creativity. Round 1 is a Kahoot quiz with 20 MCQs on Python, AI, Web Development, and Aptitude. The top 3 teams automatically qualify for the creative challenge in Phase 2. In Round 2, teams debug code to receive a story theme, write a short story, and then swap stories to generate AI image prompts and visuals. Participants should bring a laptop with Python installed.",
       date: "March 16, 2025",
       time: "9:00 AM - 5:00 PM",
       venue: "Computer Science Lab",
       category: "Workshop",
-      eligibility: "Basic programming knowledge required",
-      prizes: "Certificates and internship opportunities",
-      requirements: "Laptop with Python installed"
+      eligibility: "Participants should have basic programming knowledge.",
+      prizes: "Certificates and internship opportunities for winners.",
+      requirements: "Laptop with Python installed."
     },
     {
       id: 3,
       title: "THE CIPHER TEXT",
-      description: "Explore the world of cybersecurity, ethical hacking, and data protection. Interactive sessions covering penetration testing, vulnerability assessment, digital forensics, and security best practices. Live demonstrations of common attack vectors and defense mechanisms.",
+      description: "THE CIPHER TEXT is a cybersecurity summit featuring interactive sessions on ethical hacking, penetration testing, vulnerability assessment, and digital forensics. Attendees will see live demonstrations of common attack vectors and learn best practices for data protection. This event is ideal for those interested in cybersecurity careers.",
       date: "March 17, 2025",
       time: "11:00 AM - 3:00 PM",
       venue: "Conference Hall A",
       category: "Summit",
-      eligibility: "CS/IT students preferred",
-      prizes: "Industry certifications",
-      requirements: "Basic networking knowledge"
+      eligibility: "CS/IT students preferred, but open to all interested.",
+      prizes: "Industry certifications for outstanding participants.",
+      requirements: "Basic networking knowledge recommended."
     },
     {
       id: 4,
       title: "JADE JOURNEY",
-      description: "Intensive bootcamp covering modern web development technologies including React, Node.js, MongoDB, and cloud deployment strategies. Build full-stack applications and learn industry best practices for scalable web development.",
+      description: "JADE JOURNEY is an intensive bootcamp covering modern web development technologies including React, Node.js, MongoDB, and cloud deployment. Participants will build full-stack applications and learn best practices for scalable web development. Bring your laptop and be ready to code!",
       date: "March 18, 2025",
       time: "10:00 AM - 6:00 PM",
       venue: "IT Laboratory",
       category: "Bootcamp",
-      eligibility: "Basic HTML/CSS knowledge",
-      prizes: "Project showcase opportunity",
-      requirements: "Laptop with code editor"
+      eligibility: "Basic HTML/CSS knowledge required.",
+      prizes: "Opportunity to showcase your project at the end of the bootcamp.",
+      requirements: "Laptop with a code editor installed."
     },
     {
       id: 5,
       title: "PAPER PRESENTATION",
-      description: "Present your startup ideas to a panel of investors and industry leaders. Perfect platform for aspiring entrepreneurs to showcase their business models, market analysis, and growth strategies. Network with potential co-founders and mentors.",
+      description: "Present your startup ideas to a panel of investors and industry leaders. This event is perfect for aspiring entrepreneurs to showcase their business models, market analysis, and growth strategies. Network with potential co-founders and mentors, and compete for funding opportunities.",
       date: "March 19, 2025",
       time: "2:00 PM - 6:00 PM",
       venue: "Business Center",
       category: "Competition",
-      eligibility: "All students and recent graduates",
-      prizes: "Funding opportunities up to ₹5 lakhs",
-      requirements: "Business plan and pitch deck"
+      eligibility: "Open to all students and recent graduates.",
+      prizes: "Funding opportunities up to ₹5 lakhs for the best ideas.",
+      requirements: "Prepare a business plan and pitch deck for your presentation."
     }
   ];
 
@@ -81,14 +87,16 @@ const Events = () => {
       >
         All Events
       </motion.h1>
-      <div className="events-grid">
+      <div className="events-grid" style={{ display: 'flex', flexDirection: 'column', gap: '2rem', alignItems: 'center' }}>
         {events.map((event, index) => (
-          <motion.div 
-            key={event.id} 
+          <motion.div
+            key={event.id}
             className="event-card"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
+            variants={profileCardVariants}
+            initial="hidden"
+            animate="visible"
             transition={{ duration: 0.6, delay: index * 0.1 }}
+            style={{ width: '100%', maxWidth: '600px' }}
           >
             <div style={{ marginBottom: '1rem' }}>
               <span style={{ 
